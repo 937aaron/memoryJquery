@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <title>Memory Game</title>
+  </head>
+  <body id="hardgame">
+    <div class="wrapper">
+      <h2 class="title">Mem<i id="bulb" class="fa fa-lightbulb-o" aria-hidden="true"></i>ryGame</h2>
+      <div class="topbar">
+        <h3 class="lives">
+          <i id="hearts" class="fa fa-heart" aria-hidden="true"></i>
+          <i id="hearts" class="fa fa-heart" aria-hidden="true"></i>
+          <i id="hearts" class="fa fa-heart" aria-hidden="true"></i>
+          <i id="hearts" class="fa fa-heart" aria-hidden="true"></i>
+          <i id="hearts" class="fa fa-heart" aria-hidden="true"></i>
+          <i id="hearts"class="fa fa-heart" aria-hidden="true"></i>
+        </h3>
+        <h3 class="time"> 11:11 </h3>
+      </div>
+
+      <table>
+        <tr>
+          <td>
+            <input type="checkbox" id="button1-1">
+            <label class="card" for="button1-1">
+              <i class="fa fa-anchor" aria-hidden="true"></i>
+            </label>
+          </td>
+          <td>
+              <input type="checkbox" id="button1-2">
+              <label class="card" for="button1-2">
+                <i class="fa fa-arrows-h" aria-hidden="true"></i>
+              </label>
+          </td>
+          <td>
+            <input type="checkbox" id="button1-3">
+            <label class="card" for="button1-3">
+              <i class="fa fa-commenting" aria-hidden="true"></i>
+            </label>
+          </td>
+          <td>
+              <input type="checkbox" id="button1-4">
+              <label class="card" for="button1-4">
+                <i class="fa fa-cubes" aria-hidden="true"></i>
+              </label>
+          </td>
+          <td>
+            <input type="checkbox" id="button1-5">
+            <label class="card" for="button1-5">
+              <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+            </label>
+          </td>
+          <td>
+              <input type="checkbox" id="button1-6">
+              <label class="card" for="button1-6">
+                <i class="fa fa-cubes" aria-hidden="true"></i>
+              </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" id="button2-1">
+            <label class="card" for="button2-1">
+              <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+            </label>
+          </td>
+          <td>
+              <input type="checkbox" id="button2-2">
+              <label class="card" for="button2-2">
+                <i class="fa fa-key" aria-hidden="true"></i>
+              </label>
+          </td>
+          <td>
+            <input type="checkbox" id="button2-3">
+            <label class="card" for="button2-3">
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </label></td>
+          <td>
+              <input type="checkbox" id="button2-4">
+              <label class="card" for="button2-4">
+                <i class="fa fa-tree" aria-hidden="true"></i>
+              </label>
+          </td>
+          <td>
+            <input type="checkbox" id="button2-5">
+            <label class="card" for="button2-5">
+              <i class="fa fa-arrows-h" aria-hidden="true"></i>
+            </label>
+          </td>
+          <td>
+              <input type="checkbox" id="button2-6">
+              <label class="card" for="button2-6">
+                <i class="fa fa-wheelchair-alt" aria-hidden="true"></i>
+              </label>
+          </td>
+        </tr>
+        <!--row3-->
+        <tr>
+          <td>
+            <input type="checkbox" id="button3-1">
+            <label class="card" for="button3-1">
+              <i class="fa fa-space-shuttle" aria-hidden="true"></i>
+            </label></td>
+          <td>
+              <input type="checkbox" id="button3-2">
+              <label class="card" for="button3-2">
+                <i class="fa fa-anchor" aria-hidden="true"></i>
+              </label>
+          </td>
+          <td>
+            <input type="checkbox" id="button3-3">
+            <label class="card" for="button3-3">
+              <i class="fa fa-money" aria-hidden="true"></i>
+            </label></td>
+          <td>
+              <input type="checkbox" id="button3-4">
+              <label class="card" for="button3-4">
+                <i class="fa fa-money" aria-hidden="true"></i>
+              </label>
+          </td>
+          <td>
+            <input type="checkbox" id="button3-5">
+            <label class="card" for="button3-5">
+              <i class="fa fa-square" aria-hidden="true"></i>
+            </label></td>
+          <td>
+              <input type="checkbox" id="button3-6">
+              <label class="card" for="button3-6">
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+              </label>
+          </td>
+        </tr>
+        <!--row4-->
+        <tr>
+          <td>
+            <input type="checkbox" id="button4-1">
+            <label class="card" for="button4-1">
+              <i class="fa fa-ticket" aria-hidden="true"></i>
+            </label></td>
+          <td>
+              <input type="checkbox" id="button4-2">
+              <label class="card" for="button4-2">
+                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+              </label>
+          </td>
+          <td>
+            <input type="checkbox" id="button4-3">
+            <label class="card" for="button4-3">
+              <i class="fa fa-square" aria-hidden="true"></i>
+            </label></td>
+          <td>
+              <input type="checkbox" id="button4-4">
+              <label class="card" for="button4-4">
+                <i class="fa fa-key" aria-hidden="true"></i>
+              </label>
+          </td>
+          <td>
+            <input type="checkbox" id="button4-5">
+            <label class="card" for="button4-5">
+              <i class="fa fa-ship" aria-hidden="true"></i>
+            </label></td>
+          <td>
+              <input type="checkbox" id="button4-6">
+              <label class="card" for="button4-6">
+                <i class="fa fa-bicycle" aria-hidden="true"></i>
+              </label>
+          </td>
+        </tr>
+        <!--row5-->
+        <tr>
+          <td>
+            <input type="checkbox" id="button5-1">
+            <label class="card" for="button5-1">
+              <i class="fa fa-wifi" aria-hidden="true"></i>
+            </label></td>
+          <td>
+              <input type="checkbox" id="button5-2">
+              <label class="card" for="button5-2">
+                <i class="fa fa-ticket" aria-hidden="true"></i>
+              </label>
+          </td>
+          <td>
+            <input type="checkbox" id="button5-3">
+            <label class="card" for="button5-3">
+              <i class="fa fa-tree" aria-hidden="true"></i>
+            </label></td>
+          <td>
+              <input type="checkbox" id="button5-4">
+              <label class="card" for="button5-4">
+                <i class="fa fa-wheelchair-alt" aria-hidden="true"></i>
+              </label>
+          </td>
+          <td>
+            <input type="checkbox" id="button5-5">
+            <label class="card" for="button5-5">
+              <i class="fa fa-ship" aria-hidden="true"></i>
+            </label></td>
+          <td>
+              <input type="checkbox" id="button5-6">
+              <label class="card" for="button5-6">
+                <i class="fa fa-space-shuttle" aria-hidden="true"></i>
+              </label>
+          </td>
+        </tr>
+        <!--row6-->
+        <tr>
+          <td>
+            <input type="checkbox" id="button6-1">
+            <label class="card" for="button6-1">
+              <i class="fa fa-bicycle" aria-hidden="true"></i>
+            </label></td>
+          <td>
+              <input type="checkbox" id="button6-2">
+              <label class="card" for="button6-2">
+                <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+              </label>
+          </td>
+          <td>
+            <input type="checkbox" id="button6-3">
+            <label class="card" for="button6-3">
+              <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+            </label></td>
+          <td>
+              <input type="checkbox" id="button6-4">
+              <label class="card" for="button6-4">
+                <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+              </label>
+          </td>
+          <td>
+            <input type="checkbox" id="button6-5">
+            <label class="card" for="button6-5">
+              <i class="fa fa-commenting" aria-hidden="true"></i>
+            </label></td>
+          <td>
+              <input type="checkbox" id="button6-6">
+              <label class="card" for="button6-6">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </label>
+          </td>
+        </tr>
+        <iframe class="audio" width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/14514380&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <title>Memory Game</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h2 class="title">Mem<i id="bulb" class="fa fa-lightbulb-o" aria-hidden="true"></i>ryGame</h2>
+      <div class="topbar">
+        <h3 class="lives">
+          <i id="hearts" class="fa fa-heart" aria-hidden="true"></i>
+          <i id="hearts" class="fa fa-heart" aria-hidden="true"></i>
+          <i id="hearts" class="fa fa-heart" aria-hidden="true"></i>
+          <i id="hearts" class="fa fa-heart" aria-hidden="true"></i>
+          <i id="hearts" class="fa fa-heart" aria-hidden="true"></i>
+          <i id="hearts"class="fa fa-heart" aria-hidden="true"></i>
+        </h3>
+        <h3 class="time"> 00:00 </h3>
+      </div>
+      <input id="counter" type="number"></input>
+    <div class="responsify">
+      <table>
+        <tr>
+          <td value="1">
+              <i  class="fa fa-anchor" aria-hidden="true"></i>
+          </td>
+          <td value="2">
+                <i class="fa fa-arrows-h" aria-hidden="true"></i>
+                <!-- <i id="anchors" class="fa fa-anchor" aria-hidden="true"></i> -->
+
+          </td>
+          <td value="3">
+
+              <i class="fa fa-commenting" aria-hidden="true"></i>
+
+          </td>
+          <td value="4">
+                <i class="fa fa-cubes" aria-hidden="true"></i>
+          </td>
+          <td value="5">
+              <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+          </td>
+          <td value="4">
+                <i class="fa fa-cubes" aria-hidden="true"></i>
+          </td>
+        </tr>
+         <tr>
+          <td value="7">
+              <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+          </td>
+          <td value="8">
+                <i class="fa fa-key" aria-hidden="true"></i>
+          </td>
+          <td value="9">
+              <i class="fa fa-star" aria-hidden="true"></i>
+          <td value="10">
+
+                <i class="fa fa-tree" aria-hidden="true"></i>
+
+          </td>
+          <td value="2">
+
+              <i class="fa fa-arrows-h" aria-hidden="true"></i>
+
+          </td>
+          <td value="11">
+
+                <i class="fa fa-wheelchair-alt" aria-hidden="true"></i>
+
+          </td>
+        </tr>
+        <!-- row3 -->
+        <tr>
+          <td value="12">
+
+              <i class="fa fa-space-shuttle" aria-hidden="true"></i>
+          </td>
+          <td value="1">
+
+                <i class="fa fa-anchor" aria-hidden="true"></i>
+
+          </td>
+          <td value="13">
+
+              <i class="fa fa-money" aria-hidden="true"></i>
+
+          <td value="13">
+                <i class="fa fa-money" aria-hidden="true"></i>
+
+          </td>
+          <td value="14">
+
+              <i class="fa fa-square" aria-hidden="true"></i>
+
+          <td value= "15">
+
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+
+          </td>
+        </tr>
+        <!-- row4 -->
+        <tr>
+          <td value="16">
+
+              <i class="fa fa-ticket" aria-hidden="true"></i>
+          </td>
+          <td value="7">
+
+                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+
+          </td>
+          <td value="14">
+
+              <i class="fa fa-square" aria-hidden="true"></i>
+
+          <td value="8">
+
+                <i class="fa fa-key" aria-hidden="true"></i>
+
+          </td>
+          <td value="17">
+
+              <i class="fa fa-ship" aria-hidden="true"></i>
+          </td>
+          <td value="18">
+
+                <i class="fa fa-bicycle" aria-hidden="true"></i>
+
+          </td>
+        </tr>
+        <!-- row5 -->
+        <tr>
+          <td value="15">
+
+              <i class="fa fa-wifi" aria-hidden="true"></i>
+          </td>
+          <td value="16">
+
+                <i class="fa fa-ticket" aria-hidden="true"></i>
+
+          </td>
+          <td value="10">
+
+              <i class="fa fa-tree" aria-hidden="true"></i>
+          </td>
+          <td value="11">
+
+                <i class="fa fa-wheelchair-alt" aria-hidden="true"></i>
+
+          </td>
+          <td value="17">
+
+              <i class="fa fa-ship" aria-hidden="true"></i>
+          </td>
+          <td value ="12">
+
+                <i class="fa fa-space-shuttle" aria-hidden="true"></i>
+
+          </td>
+        </tr>
+        <!-- row6 -->
+        <tr>
+          <td value ="18">
+
+              <i class="fa fa-bicycle" aria-hidden="true"></i>
+            </td>
+          <td value="6">
+
+                <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+
+          </td>
+          <td value="5">
+
+              <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+            </td>
+          <td value ="6">
+
+                <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+
+          </td>
+          <td value="3">
+
+              <i class="fa fa-commenting" aria-hidden="true"></i>
+            </td>
+          <td value="9">
+
+                <i class="fa fa-star" aria-hidden="true"></i>
+
+          </td>
+        </tr>
+        <!-- <audio controls autoplay>
+          <source src="http://audionautix.com/Music/SeductressDubstep.mp3" type = "audio/mpeg">
+        </audio> -->
+
+
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="assets/memory.js"></script>
+  </body>
+</html>

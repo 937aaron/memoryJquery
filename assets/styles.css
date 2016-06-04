@@ -121,6 +121,7 @@ h3 {
   padding-right: 0px;
   margin-left: 0px;
   opacity: 1;
+  display: none;
 }
 #bulb {
   display: inline-block;

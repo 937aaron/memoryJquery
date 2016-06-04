@@ -2,6 +2,7 @@ var count = 0;
 var counter = $("#counter");
 var clock = $(".time");
 var time = 0;
+var lives = $(".lives").children().length;
 
 
 function funcTimer() {
@@ -27,6 +28,11 @@ $("td").click(function(){
        console.log("poop");
        //count =0;
     }
+    else if(count% 2 ===0 && $(this).attr("id") === $(".flipped").attr("id")) {
+      console.log("why you click on the same card fool!");
+      count=1;
+    }
+
     else if (count % 2 ===0 && $(this).attr("value") === $(".flipped").attr("value")) {
       $(this).addClass("flipped");
       $(this).children().css("opacity", "1");
@@ -41,7 +47,16 @@ $("td").click(function(){
     else if (count % 2=== 0 &&  $(this).attr("value")!= $(".flipped").attr("value")){
       $(this).addClass("flipped");
       $(this).children().css("opacity", "1");
-      $(".lives").children().remove();
+      lives= lives - 1;
+      if (lives === 0){
+        $(".wrapper").html("You Lost!");
+      }
+
+      else {
+        console.log("Not dead yet NOT APPROPRIATE WORDS");
+      };
+      console.log(lives + "lives");
+      $(".lives").html(lives + " Lives Remaining!");
       setTimeout(function (){
         $(".flipped").children().css("opacity","0");
         $("td").removeClass("flipped");
@@ -52,7 +67,11 @@ $("td").click(function(){
       }, 750)
       // $("td").removeClass("flipped");
       count=0;
+
     }
+
+
+
 
 //THIS IS THE BEGININING OG STUF THAT ALMOST WORKS
     // else if ($(this).attr("value") === $(this).prev(".flipped").attr("value")){
@@ -120,10 +139,10 @@ $("td").click(function(){
     //   // console.log("hello");
     //   // // $(this).toggleClass("flipped");
     // }
-    else {
-      console.log("You Cant CODE FOR $***")
-
-    }
+    // else {
+    //   console.log("You Cant CODE FOR $***")
+    //
+    // }
 //     else if (count % 2 ===0 && $(this).attr("value") === $(this).prev(".flipped").attr("value")){
 //     $(this).toggleClass("flipped");
 //     $(this).prev(".flipped").toggleClass("flipped")
@@ -132,4 +151,4 @@ $("td").click(function(){
 //     $(this).removeClass("flipped");
 //
 //   }
-})
+});

@@ -111,6 +111,8 @@ h3 {
 .lives {
   padding-left: 10px;
   padding-right: 860px;
+  color: #E6E2DF;
+  display: inline-block;
 }
 #hearts {
   display: inline-block;;
@@ -132,7 +134,7 @@ h3 {
 }
 .time {
   display: inline-block;
-  margin-top: -107px;
+  margin-top: -35px;
   margin-right: 35px;
   font-size: 16px;
   padding: 0px;

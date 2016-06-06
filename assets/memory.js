@@ -49,7 +49,8 @@ $("td").click(function(){
       $(this).children().css("opacity", "1");
       lives= lives - 1;
       if (lives === 0){
-        $(".wrapper").html("You Lost!");
+        $(".wrapper").html("loser");
+        // $(".loser").html("You Lost!");
       }
 
       else {
